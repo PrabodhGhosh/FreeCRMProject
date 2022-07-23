@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-21T14:59:26 IST" name="Default suite" finished-at="2022-07-21T14:59:51 IST" duration-ms="25096">
+    <groups>
+    </groups>
+    <test started-at="2022-07-21T14:59:26 IST" name="Default test" finished-at="2022-07-21T14:59:51 IST" duration-ms="25096">
+      <class name="com.crm.qa.tests.TestContactsPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:26 IST" name="setUp" finished-at="2022-07-21T14:59:50 IST" duration-ms="24021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:50 IST" name="validateUserInfoInContactsPage" finished-at="2022-07-21T14:59:50 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserInfoInContactsPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:50 IST" name="tearDown" finished-at="2022-07-21T14:59:51 IST" duration-ms="879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUserInfoInContactsPage status=SUCCESS method=TestContactsPage.validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@5c86a017] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.tests.TestContactsPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
