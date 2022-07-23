@@ -1,25 +1,742 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results retried="6" ignored="0" total="15" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T14:59:26 IST" name="Default suite" finished-at="2022-07-21T14:59:51 IST" duration-ms="25096">
+  <suite started-at="2022-07-23T19:35:29 IST" name="FREE CRM Application Test Automation Test Suite" finished-at="2022-07-23T19:48:52 IST" duration-ms="802901">
     <groups>
     </groups>
-    <test started-at="2022-07-21T14:59:26 IST" name="Default test" finished-at="2022-07-21T14:59:51 IST" duration-ms="25096">
+    <test started-at="2022-07-23T19:35:29 IST" name="Free CRM App Test Cases" finished-at="2022-07-23T19:48:52 IST" duration-ms="802901">
       <class name="com.crm.qa.tests.TestContactsPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:26 IST" name="setUp" finished-at="2022-07-21T14:59:50 IST" duration-ms="24021" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:36:55 IST" name="setUp" finished-at="2022-07-23T19:37:11 IST" duration-ms="16840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:50 IST" name="validateUserInfoInContactsPage" finished-at="2022-07-21T14:59:50 IST" duration-ms="112" status="PASS">
+        <test-method signature="validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:37:11 IST" name="validateUserInfoInContactsPage" finished-at="2022-07-23T19:37:12 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserInfoInContactsPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@5c86a017]" started-at="2022-07-21T14:59:50 IST" name="tearDown" finished-at="2022-07-21T14:59:51 IST" duration-ms="879" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:37:12 IST" name="tearDown" finished-at="2022-07-23T19:37:13 IST" duration-ms="985" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateUserInfoInContactsPage status=SUCCESS method=TestContactsPage.validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@5c86a017] output={null}]]]>
+                <![CDATA[[TestResult name=validateUserInfoInContactsPage status=SUCCESS method=TestContactsPage.validateUserInfoInContactsPage()[pri:1, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:37:13 IST" name="setUp" finished-at="2022-07-23T19:37:31 IST" duration-ms="18483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:37:31 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:38:31 IST" duration-ms="60075" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"John","lastName":"Kennedy"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$QLwtmLpn.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:38:31 IST" name="tearDown" finished-at="2022-07-23T19:38:32 IST" duration-ms="1071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:38:32 IST" name="setUp" finished-at="2022-07-23T19:38:48 IST" duration-ms="15257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:38:48 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:39:48 IST" duration-ms="60136" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"John","lastName":"Kennedy"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$F3gYYzz8.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:39:48 IST" name="tearDown" finished-at="2022-07-23T19:39:49 IST" duration-ms="1139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:39:49 IST" name="setUp" finished-at="2022-07-23T19:40:06 IST" duration-ms="17645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:40:06 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:41:07 IST" duration-ms="60123" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"John","lastName":"Kennedy"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$YfDPozrY.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:41:07 IST" name="tearDown" finished-at="2022-07-23T19:41:08 IST" duration-ms="1016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=FAILURE method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:41:08 IST" name="setUp" finished-at="2022-07-23T19:41:21 IST" duration-ms="13894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:41:21 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:42:22 IST" duration-ms="60144" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Peter","lastName":"Tom"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$hzQ349yW.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:42:22 IST" name="tearDown" finished-at="2022-07-23T19:42:23 IST" duration-ms="1159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:42:23 IST" name="setUp" finished-at="2022-07-23T19:42:44 IST" duration-ms="21270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:42:44 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:43:44 IST" duration-ms="60058" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Peter","lastName":"Tom"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$qTStw8OM.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:43:44 IST" name="tearDown" finished-at="2022-07-23T19:43:45 IST" duration-ms="959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:43:45 IST" name="setUp" finished-at="2022-07-23T19:43:59 IST" duration-ms="14289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:43:59 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:44:59 IST" duration-ms="60082" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Peter","lastName":"Tom"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$CYG3tlkW.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:44:59 IST" name="tearDown" finished-at="2022-07-23T19:45:00 IST" duration-ms="1033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=FAILURE method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:45:01 IST" name="setUp" finished-at="2022-07-23T19:45:17 IST" duration-ms="16573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:45:17 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:46:17 IST" duration-ms="60135" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Ket","lastName":"Winslet"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at jdk.internal.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$JZ2rrVz6.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:46:17 IST" name="tearDown" finished-at="2022-07-23T19:46:18 IST" duration-ms="958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:46:18 IST" name="setUp" finished-at="2022-07-23T19:46:33 IST" duration-ms="14908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:46:33 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:47:33 IST" duration-ms="60088" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Ket","lastName":"Winslet"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at jdk.internal.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$lKsQuKNZ.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:47:33 IST" name="tearDown" finished-at="2022-07-23T19:47:34 IST" duration-ms="1000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=SKIP method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:47:34 IST" name="setUp" finished-at="2022-07-23T19:47:51 IST" duration-ms="16695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:47:51 IST" name="createContact" data-provider="dataproviderMethod" finished-at="2022-07-23T19:48:51 IST" duration-ms="60124" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Ket","lastName":"Winslet"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INWPF1BWGP9-AAD', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at jdk.internal.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:236)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:298)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$r2hhw8Ro.frame(Unknown Source)
+at com.crm.qa.pages.HomePage.hoverOnContacts(HomePage.java:46)
+at com.crm.qa.tests.TestContactsPage.createContact(TestContactsPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.tests.TestContactsPage@9816741]" started-at="2022-07-23T19:48:51 IST" name="tearDown" finished-at="2022-07-23T19:48:52 IST" duration-ms="1176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createContact status=FAILURE method=TestContactsPage.createContact(java.lang.Object)[pri:2, instance:com.crm.qa.tests.TestContactsPage@9816741] output={null}]]]>
               </value>
             </param>
           </params>
@@ -27,6 +744,70 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.tests.TestContactsPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.crm.qa.tests.TestLoginPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:29 IST" name="setUp" finished-at="2022-07-23T19:35:38 IST" duration-ms="8341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTitle()[pri:1, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:38 IST" name="validateTitle" finished-at="2022-07-23T19:35:38 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:38 IST" name="tearDown" finished-at="2022-07-23T19:35:39 IST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:39 IST" name="setUp" finished-at="2022-07-23T19:35:47 IST" duration-ms="8063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLogin()[pri:2, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:47 IST" name="validateLogin" finished-at="2022-07-23T19:35:56 IST" duration-ms="9649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.tests.TestLoginPage@771a660]" started-at="2022-07-23T19:35:56 IST" name="tearDown" finished-at="2022-07-23T19:35:57 IST" duration-ms="1059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.tests.TestLoginPage -->
+      <class name="com.crm.qa.tests.TestHomePage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:35:57 IST" name="setUp" finished-at="2022-07-23T19:36:11 IST" duration-ms="13971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateUserInfo()[pri:1, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:11 IST" name="validateUserInfo" finished-at="2022-07-23T19:36:12 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:12 IST" name="tearDown" finished-at="2022-07-23T19:36:13 IST" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:13 IST" name="setUp" finished-at="2022-07-23T19:36:29 IST" duration-ms="16731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickContacts()[pri:2, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:29 IST" name="clickContacts" finished-at="2022-07-23T19:36:31 IST" duration-ms="1813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContacts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:31 IST" name="tearDown" finished-at="2022-07-23T19:36:32 IST" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:32 IST" name="setUp" finished-at="2022-07-23T19:36:49 IST" duration-ms="16415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="hoverOnContacts()[pri:3, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:49 IST" name="hoverOnContacts" finished-at="2022-07-23T19:36:54 IST" duration-ms="5196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnContacts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.tests.TestHomePage@5ab956d7]" started-at="2022-07-23T19:36:54 IST" name="tearDown" finished-at="2022-07-23T19:36:55 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.tests.TestHomePage -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>
